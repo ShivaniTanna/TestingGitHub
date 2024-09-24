@@ -6,6 +6,8 @@ session("flag")=false
 Session("DMStatus")= "Dialer"
 Session("repeatflag")=""
 
+    session("TeST")=""
+
 if left(Request.Form("APHONE"),2)="00" then
 	Session("aphone")=right(trim(Request.form("APHONE")),len(trim(Request.form("APHONE"))-2))
 elseif left(Request.Form("APHONE"),1)="0" then
