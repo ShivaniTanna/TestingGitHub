@@ -1,6 +1,6 @@
 <!--#include file="../connection/constr.asp"-->
 <%
-response.Write "hello"
+'response.Write "hello"
 'response.End
 if session("aphone")="" or session("aphone")=" " or Len(Session("aphone"))=0 then 
     response.Write "<center><h2 style='color:red;'>Your session is expired!!! </h2></center>"

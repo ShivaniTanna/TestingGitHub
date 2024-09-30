@@ -112,6 +112,7 @@ end if
 		if attempt1 <>"" then
 		attempt2=getanyfieldvalue("AZ275_USTC_0924","Aphone",Session("aphone"),"attempt2","","")	
 			if attempt2 <> "" then
+
 				attempt3=getanyfieldvalue("AZ275_USTC_0924","Aphone",Session("aphone"),"attempt3","","")	
 				if attempt3 <> "" then  
 					call UpdateAZ275_USTC_0924("attempt4",now(),"")
@@ -320,7 +321,7 @@ Phone=Session("aphone")
 		</form>
 		<script language="javascript">
 					document.frm.navi.value="CatiPage.asp";
-					document.frm.aphone.value="<%=session("aphone")%>";
+					//document.frm.aphone.value="<%=session("aphone")%>";
 					document.frm.submit();
 		</script>
 		
